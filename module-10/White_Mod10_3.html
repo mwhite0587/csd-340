@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    img {
+      width: 300px;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Assignment 10.3: JavaScript - Part 2</h1>
+  <p>Click the image to change it!</p>
+  <img src="Images/Hello kitty 1.png" alt="Hello Kitty" onclick="changeImage(this)">
+
+  <script>
+    function changeImage(img) {
+      if (img.src.includes("Hello kitty 1.png")) {
+        img.src = "hello kitty 2.png";
+      } else {
+        img.src = "Hello kitty 1.png";
+      }
+    }
+  </script>
+</body>
+</html>
